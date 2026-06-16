@@ -370,8 +370,8 @@ def train_one(esd_df: pd.DataFrame, train_spk, val_spk, label_names, cfg: TrainC
 
     Returns a dict with best_val_acc / best_epoch, the best epoch's metrics
     (val_f1/prec/rec, per_class_recall, confusion_matrix), the full per-epoch
-    ``history``, the best head ``state`` (CPU state_dict, for saving), and the
-    train/val sample counts.
+    ``history``, the best head ``state`` (CPU state_dict, for saving), the backbone
+    ``embed_dim``, and the train/val sample counts.
     """
     num_labels = len(label_names)
     extractor = make_extractor(model_id)
