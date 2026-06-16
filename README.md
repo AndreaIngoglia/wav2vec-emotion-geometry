@@ -3,8 +3,7 @@
 A geometric analysis of emotion encoding in a frozen wav2vec 2.0 speech-emotion model. Using linear probing, subspace geometry, acoustic features, Procrustes alignment, ablation, and a cross-lingual evaluation of a retrained head, it locates where cross-corpus transfer fails and shows the failure is a rotational misalignment of the classifier, not a loss of emotional information in the encoder.
 
 Backbone: `ehcalabres/wav2vec2-lg-xlsr-en-speech-emotion-recognition` (frozen).
-Embeddings = masked **mean+std pooling** of the average of the last 4 hidden
-states → a **2048-d** vector per utterance.
+Embeddings = masked **mean+std pooling** of the last hidden states → a **2048-d** vector per utterance.
 
 ## Pipeline
 
