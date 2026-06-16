@@ -1,0 +1,154 @@
+{
+  "dataset": "EMODB",
+  "language": "German",
+  "shared_emotions": [
+    "angry",
+    "happy",
+    "neutral",
+    "sad"
+  ],
+  "n_samples": 339,
+  "n_speakers": 10,
+  "speakers": [
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "3",
+    "8",
+    "9"
+  ],
+  "base_model": {
+    "name": "RAVDESS base (HuggingFace, no retraining)",
+    "model_id": "ehcalabres/wav2vec2-lg-xlsr-en-speech-emotion-recognition",
+    "model": "Base RAVDESS model",
+    "accuracy": 0.21238938053097345,
+    "precision_macro": 0.12798485730926035,
+    "recall_macro": 0.24567659119272595,
+    "f1_macro": 0.164845550945136,
+    "per_class_accuracy": {
+      "angry": 0.6017699115044248,
+      "happy": 0.584070796460177,
+      "neutral": 0.5988200589970502,
+      "sad": 0.640117994100295
+    },
+    "per_class_precision": {
+      "angry": 0.0,
+      "happy": 0.29411764705882354,
+      "neutral": 0.21782178217821782,
+      "sad": 0.0
+    },
+    "per_class_recall": {
+      "angry": 0.0,
+      "happy": 0.704225352112676,
+      "neutral": 0.27848101265822783,
+      "sad": 0.0
+    },
+    "per_class_f1": {
+      "angry": 0.0,
+      "happy": 0.4149377593360996,
+      "neutral": 0.24444444444444444,
+      "sad": 0.0
+    },
+    "prediction_distribution": {
+      "happy": 170,
+      "sad": 60,
+      "neutral": 101,
+      "angry": 8
+    }
+  },
+  "retrained_model": {
+    "name": "Retrained head (ESD eng+chi combined)",
+    "saved_model_dir": "/content/drive/MyDrive/saved_models/all",
+    "model": "Retrained model (ESD eng+chi)",
+    "accuracy": 0.9469026548672567,
+    "precision_macro": 0.9454649390243902,
+    "recall_macro": 0.9499840666645141,
+    "f1_macro": 0.9462966466939977,
+    "per_class_accuracy": {
+      "angry": 0.9705014749262537,
+      "happy": 0.9498525073746312,
+      "neutral": 0.9793510324483776,
+      "sad": 0.9941002949852508
+    },
+    "per_class_precision": {
+      "angry": 0.975609756097561,
+      "happy": 0.8375,
+      "neutral": 1.0,
+      "sad": 0.96875
+    },
+    "per_class_recall": {
+      "angry": 0.9448818897637795,
+      "happy": 0.9436619718309859,
+      "neutral": 0.9113924050632911,
+      "sad": 1.0
+    },
+    "per_class_f1": {
+      "angry": 0.96,
+      "happy": 0.8874172185430463,
+      "neutral": 0.9536423841059603,
+      "sad": 0.9841269841269841
+    },
+    "prediction_distribution": {
+      "happy": 80,
+      "neutral": 72,
+      "angry": 123,
+      "sad": 64
+    }
+  },
+  "per_speaker": {
+    "10": {
+      "n": 21,
+      "base_acc": 0.23809523809523808,
+      "retrained_acc": 1.0
+    },
+    "11": {
+      "n": 35,
+      "base_acc": 0.2857142857142857,
+      "retrained_acc": 0.9714285714285714
+    },
+    "12": {
+      "n": 22,
+      "base_acc": 0.0,
+      "retrained_acc": 0.9090909090909091
+    },
+    "13": {
+      "n": 36,
+      "base_acc": 0.2222222222222222,
+      "retrained_acc": 0.8333333333333334
+    },
+    "14": {
+      "n": 41,
+      "base_acc": 0.24390243902439024,
+      "retrained_acc": 0.975609756097561
+    },
+    "15": {
+      "n": 34,
+      "base_acc": 0.20588235294117646,
+      "retrained_acc": 0.9705882352941176
+    },
+    "16": {
+      "n": 39,
+      "base_acc": 0.2564102564102564,
+      "retrained_acc": 0.9743589743589743
+    },
+    "3": {
+      "n": 39,
+      "base_acc": 0.1282051282051282,
+      "retrained_acc": 0.9487179487179487
+    },
+    "8": {
+      "n": 42,
+      "base_acc": 0.2619047619047619,
+      "retrained_acc": 0.9523809523809523
+    },
+    "9": {
+      "n": 30,
+      "base_acc": 0.2,
+      "retrained_acc": 0.9333333333333333
+    }
+  }
+}

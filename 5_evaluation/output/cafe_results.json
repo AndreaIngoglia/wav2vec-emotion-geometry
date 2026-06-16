@@ -1,0 +1,99 @@
+{
+  "dataset": "CaFE",
+  "language": "French",
+  "shared_emotions": [
+    "angry",
+    "happy",
+    "neutral",
+    "sad",
+    "surprised"
+  ],
+  "n_samples": 648,
+  "base_model": {
+    "name": "RAVDESS base (HuggingFace, no retraining)",
+    "model_id": "ehcalabres/wav2vec2-lg-xlsr-en-speech-emotion-recognition",
+    "model": "Base RAVDESS model",
+    "accuracy": 0.1404320987654321,
+    "precision_macro": 0.10104813315339631,
+    "recall_macro": 0.19166666666666668,
+    "f1_macro": 0.13226680496813953,
+    "per_class_accuracy": {
+      "angry": 0.7777777777777778,
+      "happy": 0.4783950617283951,
+      "neutral": 0.8179012345679012,
+      "sad": 0.7654320987654321,
+      "surprised": 0.44135802469135804
+    },
+    "per_class_precision": {
+      "angry": 0.0,
+      "happy": 0.13533834586466165,
+      "neutral": 0.3357142857142857,
+      "sad": 0.0,
+      "surprised": 0.03418803418803419
+    },
+    "per_class_recall": {
+      "angry": 0.0,
+      "happy": 0.25,
+      "neutral": 0.6527777777777778,
+      "sad": 0.0,
+      "surprised": 0.05555555555555555
+    },
+    "per_class_f1": {
+      "angry": 0.0,
+      "happy": 0.17560975609756097,
+      "neutral": 0.44339622641509435,
+      "sad": 0.0,
+      "surprised": 0.042328042328042326
+    },
+    "prediction_distribution": {
+      "happy": 266,
+      "surprised": 234,
+      "neutral": 140,
+      "sad": 8
+    }
+  },
+  "retrained_model": {
+    "name": "Retrained head (ESD eng+chi combined)",
+    "saved_model_dir": "/content/drive/MyDrive/saved_models/all",
+    "model": "Retrained model (ESD eng+chi)",
+    "accuracy": 0.6342592592592593,
+    "precision_macro": 0.6249785455389472,
+    "recall_macro": 0.6152777777777778,
+    "f1_macro": 0.6083712558309011,
+    "per_class_accuracy": {
+      "angry": 0.8904320987654321,
+      "happy": 0.7700617283950617,
+      "neutral": 0.9104938271604939,
+      "sad": 0.8657407407407407,
+      "surprised": 0.8317901234567902
+    },
+    "per_class_precision": {
+      "angry": 0.7134502923976608,
+      "happy": 0.4774774774774775,
+      "neutral": 0.64,
+      "sad": 0.6417910447761194,
+      "surprised": 0.6521739130434783
+    },
+    "per_class_recall": {
+      "angry": 0.8472222222222222,
+      "happy": 0.3680555555555556,
+      "neutral": 0.4444444444444444,
+      "sad": 0.8958333333333334,
+      "surprised": 0.5208333333333334
+    },
+    "per_class_f1": {
+      "angry": 0.7746031746031746,
+      "happy": 0.41568627450980394,
+      "neutral": 0.5245901639344263,
+      "sad": 0.7478260869565218,
+      "surprised": 0.5791505791505791
+    },
+    "prediction_distribution": {
+      "angry": 171,
+      "surprised": 115,
+      "happy": 111,
+      "sad": 201,
+      "neutral": 50
+    }
+  }
+}

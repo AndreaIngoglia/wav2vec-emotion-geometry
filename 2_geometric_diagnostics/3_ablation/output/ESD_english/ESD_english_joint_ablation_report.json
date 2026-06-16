@@ -1,0 +1,196 @@
+{
+  "dataset": "ESD_english",
+  "nuisance_names": [
+    "speaker",
+    "gender"
+  ],
+  "individual_ranks": {
+    "speaker": 20,
+    "gender": 1
+  },
+  "joint_rank": 21,
+  "baseline": {
+    "acc_mean": 0.7872087811271298,
+    "acc_std": 0.07519682182166322,
+    "f1_macro_mean": 0.7786199533109684,
+    "f1_macro_std": 0.08462352989503816,
+    "precision_macro_mean": 0.8008678200167981,
+    "recall_macro_mean": 0.7872054502425414,
+    "acc_cv_pred": 0.7871841774322625,
+    "precision_macro_cv_pred": 0.787318657434276,
+    "recall_macro_cv_pred": 0.7871891791022216,
+    "f1_macro_cv_pred": 0.7871439846277856,
+    "n_classes": 5,
+    "classes": [
+      "Angry",
+      "Happy",
+      "Neutral",
+      "Sad",
+      "Surprise"
+    ]
+  },
+  "individual_ablations": {
+    "speaker": {
+      "acc_mean": 0.7807465268676278,
+      "acc_std": 0.07836957386700379,
+      "f1_macro_mean": 0.7728114367387494,
+      "f1_macro_std": 0.08502152465652858,
+      "precision_macro_mean": 0.7910389350399397,
+      "recall_macro_mean": 0.7807474943657929,
+      "acc_cv_pred": 0.7807248199382646,
+      "precision_macro_cv_pred": 0.7799062604708783,
+      "recall_macro_cv_pred": 0.7807291775946907,
+      "f1_macro_cv_pred": 0.7802457631120203,
+      "n_classes": 5,
+      "classes": [
+        "Angry",
+        "Happy",
+        "Neutral",
+        "Sad",
+        "Surprise"
+      ]
+    },
+    "gender": {
+      "acc_mean": 0.7865792267365661,
+      "acc_std": 0.07563039632066403,
+      "f1_macro_mean": 0.7778852241096519,
+      "f1_macro_std": 0.08519828552195245,
+      "precision_macro_mean": 0.7997656839365724,
+      "recall_macro_mean": 0.7865768797549649,
+      "acc_cv_pred": 0.7865553904195725,
+      "precision_macro_cv_pred": 0.7867152649990303,
+      "recall_macro_cv_pred": 0.7865603463184788,
+      "f1_macro_cv_pred": 0.7865104841119198,
+      "n_classes": 5,
+      "classes": [
+        "Angry",
+        "Happy",
+        "Neutral",
+        "Sad",
+        "Surprise"
+      ]
+    }
+  },
+  "joint_ablation": {
+    "acc_mean": 0.7816615989515071,
+    "acc_std": 0.07709131504011577,
+    "f1_macro_mean": 0.7738668381597623,
+    "f1_macro_std": 0.083644089446239,
+    "precision_macro_mean": 0.792445403182655,
+    "recall_macro_mean": 0.7816622712794238,
+    "acc_cv_pred": 0.7816394192294501,
+    "precision_macro_cv_pred": 0.7809341103212614,
+    "recall_macro_cv_pred": 0.7816439206665201,
+    "f1_macro_cv_pred": 0.7812222899585559,
+    "n_classes": 5,
+    "classes": [
+      "Angry",
+      "Happy",
+      "Neutral",
+      "Sad",
+      "Surprise"
+    ]
+  },
+  "neighborhood_baseline": {
+    "emotion": {
+      "mean_pct": 68.78815593917913,
+      "std_pct": 31.068169045432107
+    },
+    "speaker": {
+      "mean_pct": 27.54696848443276,
+      "std_pct": 21.13510756826583
+    },
+    "gender": {
+      "mean_pct": 65.41366563774247,
+      "std_pct": 22.698888986631687
+    }
+  },
+  "neighborhood_joint_ablated": {
+    "emotion": {
+      "mean_pct": 68.58389543081438,
+      "std_pct": 31.148804019621526
+    },
+    "speaker": {
+      "mean_pct": 26.205937273731944,
+      "std_pct": 20.806585655568508
+    },
+    "gender": {
+      "mean_pct": 64.46705537136542,
+      "std_pct": 22.87402138315604
+    }
+  },
+  "confusion_matrix_baseline": [
+    [
+      3116,
+      199,
+      48,
+      7,
+      128
+    ],
+    [
+      254,
+      2242,
+      155,
+      291,
+      557
+    ],
+    [
+      59,
+      261,
+      2905,
+      270,
+      5
+    ],
+    [
+      36,
+      187,
+      395,
+      2847,
+      33
+    ],
+    [
+      144,
+      665,
+      13,
+      16,
+      2661
+    ]
+  ],
+  "confusion_matrix_joint": [
+    [
+      3099,
+      180,
+      61,
+      10,
+      148
+    ],
+    [
+      252,
+      2195,
+      176,
+      281,
+      595
+    ],
+    [
+      55,
+      229,
+      2890,
+      316,
+      10
+    ],
+    [
+      31,
+      214,
+      424,
+      2799,
+      30
+    ],
+    [
+      146,
+      638,
+      12,
+      12,
+      2691
+    ]
+  ]
+}

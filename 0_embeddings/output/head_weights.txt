@@ -1,0 +1,4 @@
+classifier.dense.bias	(1024,)
+classifier.dense.weight	(1024, 1024)
+classifier.output.bias	(8,)
+classifier.output.weight	(8, 1024)

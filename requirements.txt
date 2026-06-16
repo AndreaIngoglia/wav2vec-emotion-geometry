@@ -1,0 +1,26 @@
+# Master-thesis SER pipeline — Python dependencies.
+# Install with:  pip install -r requirements.txt
+# (or, to also make the `common` package importable from anywhere: pip install -e .)
+
+# --- core scientific stack ---
+numpy~=2.0.2
+pandas~=2.3.3
+scipy
+scikit-learn~=1.6.1
+matplotlib~=3.9.4
+
+# --- audio + features ---
+librosa~=0.11.0
+soundfile~=0.13.1
+opensmile~=2.6.0
+
+# --- wav2vec2 model + embeddings ---
+torch~=2.8.0
+torchaudio~=2.8.0
+transformers~=4.57.3
+safetensors~=0.7.0
+protobuf
+
+# --- misc ---
+pyarrow
+tqdm~=4.67.1

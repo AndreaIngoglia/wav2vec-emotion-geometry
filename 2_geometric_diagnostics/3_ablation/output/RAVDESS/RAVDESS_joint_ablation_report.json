@@ -1,0 +1,298 @@
+{
+  "dataset": "RAVDESS",
+  "nuisance_names": [
+    "gender",
+    "actor_id"
+  ],
+  "individual_ranks": {
+    "gender": 1,
+    "actor_id": 24
+  },
+  "joint_rank": 25,
+  "baseline": {
+    "acc_mean": 0.9158333333333333,
+    "acc_std": 0.035617350814067375,
+    "f1_macro_mean": 0.909771294798734,
+    "f1_macro_std": 0.03523848167286547,
+    "precision_macro_mean": 0.9241517997718333,
+    "recall_macro_mean": 0.9114583333333333,
+    "acc_cv_pred": 0.9180555555555555,
+    "precision_macro_cv_pred": 0.9156882822892054,
+    "recall_macro_cv_pred": 0.9134114583333333,
+    "f1_macro_cv_pred": 0.9143874550023663,
+    "n_classes": 8,
+    "classes": [
+      "angry",
+      "calm",
+      "disgust",
+      "fearful",
+      "happy",
+      "neutral",
+      "sad",
+      "surprised"
+    ]
+  },
+  "individual_ablations": {
+    "gender": {
+      "acc_mean": 0.9158333333333333,
+      "acc_std": 0.034739995451217566,
+      "f1_macro_mean": 0.9095296997556893,
+      "f1_macro_std": 0.034119440057583744,
+      "precision_macro_mean": 0.9236834995812693,
+      "recall_macro_mean": 0.9114583333333333,
+      "acc_cv_pred": 0.9180555555555555,
+      "precision_macro_cv_pred": 0.9150424944904249,
+      "recall_macro_cv_pred": 0.9134114583333333,
+      "f1_macro_cv_pred": 0.9140978931211894,
+      "n_classes": 8,
+      "classes": [
+        "angry",
+        "calm",
+        "disgust",
+        "fearful",
+        "happy",
+        "neutral",
+        "sad",
+        "surprised"
+      ]
+    },
+    "actor_id": {
+      "acc_mean": 0.9175000000000001,
+      "acc_std": 0.03617622334907929,
+      "f1_macro_mean": 0.9114717874106398,
+      "f1_macro_std": 0.035652027134284316,
+      "precision_macro_mean": 0.9260551227612069,
+      "recall_macro_mean": 0.9130208333333332,
+      "acc_cv_pred": 0.9201388888888888,
+      "precision_macro_cv_pred": 0.9175790855183463,
+      "recall_macro_cv_pred": 0.9153645833333334,
+      "f1_macro_cv_pred": 0.9163011296466126,
+      "n_classes": 8,
+      "classes": [
+        "angry",
+        "calm",
+        "disgust",
+        "fearful",
+        "happy",
+        "neutral",
+        "sad",
+        "surprised"
+      ]
+    }
+  },
+  "joint_ablation": {
+    "acc_mean": 0.9177777777777777,
+    "acc_std": 0.03590109871423002,
+    "f1_macro_mean": 0.9118913229210367,
+    "f1_macro_std": 0.035379854725720646,
+    "precision_macro_mean": 0.9261959784440519,
+    "recall_macro_mean": 0.9140625,
+    "acc_cv_pred": 0.9201388888888888,
+    "precision_macro_cv_pred": 0.9170662588003906,
+    "recall_macro_cv_pred": 0.916015625,
+    "f1_macro_cv_pred": 0.9164212294243079,
+    "n_classes": 8,
+    "classes": [
+      "angry",
+      "calm",
+      "disgust",
+      "fearful",
+      "happy",
+      "neutral",
+      "sad",
+      "surprised"
+    ]
+  },
+  "neighborhood_baseline": {
+    "emotion": {
+      "mean_pct": 90.31944444444444,
+      "std_pct": 21.705587371645766
+    },
+    "actor_id": {
+      "mean_pct": 13.027777777777779,
+      "std_pct": 10.206169460758938
+    },
+    "gender": {
+      "mean_pct": 58.92129629629629,
+      "std_pct": 17.079425303270195
+    }
+  },
+  "neighborhood_joint_ablated": {
+    "emotion": {
+      "mean_pct": 90.30555555555556,
+      "std_pct": 21.764008543952432
+    },
+    "actor_id": {
+      "mean_pct": 11.949074074074074,
+      "std_pct": 9.895933776834841
+    },
+    "gender": {
+      "mean_pct": 57.300925925925924,
+      "std_pct": 16.879169326935273
+    }
+  },
+  "confusion_matrix_baseline": [
+    [
+      181,
+      0,
+      1,
+      0,
+      8,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      176,
+      0,
+      0,
+      0,
+      6,
+      10,
+      0
+    ],
+    [
+      1,
+      1,
+      186,
+      0,
+      1,
+      0,
+      3,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      176,
+      4,
+      0,
+      10,
+      1
+    ],
+    [
+      6,
+      0,
+      1,
+      0,
+      173,
+      5,
+      2,
+      5
+    ],
+    [
+      1,
+      11,
+      0,
+      0,
+      2,
+      81,
+      1,
+      0
+    ],
+    [
+      0,
+      10,
+      4,
+      7,
+      3,
+      1,
+      167,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      8,
+      0,
+      0,
+      182
+    ]
+  ],
+  "confusion_matrix_joint": [
+    [
+      181,
+      0,
+      1,
+      0,
+      8,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      176,
+      0,
+      0,
+      0,
+      7,
+      9,
+      0
+    ],
+    [
+      1,
+      1,
+      187,
+      0,
+      1,
+      0,
+      2,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      177,
+      3,
+      0,
+      10,
+      1
+    ],
+    [
+      6,
+      0,
+      1,
+      0,
+      173,
+      5,
+      2,
+      5
+    ],
+    [
+      1,
+      11,
+      0,
+      0,
+      1,
+      82,
+      1,
+      0
+    ],
+    [
+      0,
+      10,
+      4,
+      7,
+      3,
+      1,
+      167,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      9,
+      0,
+      0,
+      182
+    ]
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "dataset": "ESD",
+  "nuisance_names": [
+    "language",
+    "speaker",
+    "gender"
+  ],
+  "individual_ranks": {
+    "language": 1,
+    "speaker": 20,
+    "gender": 1
+  },
+  "joint_rank": 22,
+  "baseline": {
+    "acc_mean": 0.7680538228800392,
+    "acc_std": 0.06372557507220845,
+    "f1_macro_mean": 0.765624914603347,
+    "f1_macro_std": 0.06713630412051051,
+    "precision_macro_mean": 0.7869504925937417,
+    "recall_macro_mean": 0.7680522890721029,
+    "acc_cv_pred": 0.7680459507344116,
+    "precision_macro_cv_pred": 0.7671936776502097,
+    "recall_macro_cv_pred": 0.7680479145701778,
+    "f1_macro_cv_pred": 0.7674876429322084,
+    "n_classes": 5,
+    "classes": [
+      "Angry",
+      "Happy",
+      "Neutral",
+      "Sad",
+      "Surprise"
+    ]
+  },
+  "individual_ablations": {
+    "language": {
+      "acc_mean": 0.7667964837680923,
+      "acc_std": 0.06451779925079608,
+      "f1_macro_mean": 0.7643252890721703,
+      "f1_macro_std": 0.06789134512364353,
+      "precision_macro_mean": 0.7852584167752673,
+      "recall_macro_mean": 0.7667948595063294,
+      "acc_cv_pred": 0.7667885923301138,
+      "precision_macro_cv_pred": 0.7659200391571584,
+      "recall_macro_cv_pred": 0.7667905920710383,
+      "f1_macro_cv_pred": 0.7662338021675221,
+      "n_classes": 5,
+      "classes": [
+        "Angry",
+        "Happy",
+        "Neutral",
+        "Sad",
+        "Surprise"
+      ]
+    },
+    "speaker": {
+      "acc_mean": 0.7724821980538066,
+      "acc_std": 0.05815232176959907,
+      "f1_macro_mean": 0.770028412487596,
+      "f1_macro_std": 0.06279481320509062,
+      "precision_macro_mean": 0.7845426164929038,
+      "recall_macro_mean": 0.7724809833590704,
+      "acc_cv_pred": 0.7724752814768246,
+      "precision_macro_cv_pred": 0.7711589005257213,
+      "recall_macro_cv_pred": 0.7724769349923231,
+      "f1_macro_cv_pred": 0.7716746607090319,
+      "n_classes": 5,
+      "classes": [
+        "Angry",
+        "Happy",
+        "Neutral",
+        "Sad",
+        "Surprise"
+      ]
+    },
+    "gender": {
+      "acc_mean": 0.7660538719437403,
+      "acc_std": 0.06416400940973536,
+      "f1_macro_mean": 0.7634866351561742,
+      "f1_macro_std": 0.06794437751884724,
+      "precision_macro_mean": 0.7859122367598798,
+      "recall_macro_mean": 0.7660524937970564,
+      "acc_cv_pred": 0.7660456078184832,
+      "precision_macro_cv_pred": 0.7650515685129171,
+      "recall_macro_cv_pred": 0.7660475022267121,
+      "f1_macro_cv_pred": 0.7653922171852561,
+      "n_classes": 5,
+      "classes": [
+        "Angry",
+        "Happy",
+        "Neutral",
+        "Sad",
+        "Surprise"
+      ]
+    }
+  },
+  "joint_ablation": {
+    "acc_mean": 0.7720534794341319,
+    "acc_std": 0.05800645738428712,
+    "f1_macro_mean": 0.7696384275273738,
+    "f1_macro_std": 0.06270379234703029,
+    "precision_macro_mean": 0.7842460756177372,
+    "recall_macro_mean": 0.7720518388645964,
+    "acc_cv_pred": 0.7720466365662685,
+    "precision_macro_cv_pred": 0.7709164871382297,
+    "recall_macro_cv_pred": 0.7720482574028065,
+    "f1_macro_cv_pred": 0.7713406616215628,
+    "n_classes": 5,
+    "classes": [
+      "Angry",
+      "Happy",
+      "Neutral",
+      "Sad",
+      "Surprise"
+    ]
+  },
+  "neighborhood_baseline": {
+    "emotion": {
+      "mean_pct": 67.19590024956658,
+      "std_pct": 30.310802703309477
+    },
+    "speaker": {
+      "mean_pct": 32.146082185517514,
+      "std_pct": 23.94808092003923
+    },
+    "gender": {
+      "mean_pct": 68.04576022556247,
+      "std_pct": 22.756779526278358
+    },
+    "language": {
+      "mean_pct": 98.32523670724504,
+      "std_pct": 9.2057962545993
+    }
+  },
+  "neighborhood_joint_ablated": {
+    "emotion": {
+      "mean_pct": 66.44205673353527,
+      "std_pct": 30.505100348738655
+    },
+    "speaker": {
+      "mean_pct": 29.64546303175782,
+      "std_pct": 23.144263774029955
+    },
+    "gender": {
+      "mean_pct": 66.09056790687927,
+      "std_pct": 22.907059163057152
+    },
+    "language": {
+      "mean_pct": 96.56512545007716,
+      "std_pct": 12.949377355391615
+    }
+  },
+  "confusion_matrix_baseline": [
+    [
+      5819,
+      537,
+      128,
+      12,
+      502
+    ],
+    [
+      624,
+      4201,
+      439,
+      297,
+      1438
+    ],
+    [
+      116,
+      340,
+      6017,
+      352,
+      175
+    ],
+    [
+      31,
+      219,
+      569,
+      6052,
+      127
+    ],
+    [
+      555,
+      1474,
+      87,
+      95,
+      4788
+    ]
+  ],
+  "confusion_matrix_joint": [
+    [
+      5821,
+      537,
+      105,
+      30,
+      505
+    ],
+    [
+      623,
+      4291,
+      481,
+      300,
+      1304
+    ],
+    [
+      94,
+      364,
+      6010,
+      444,
+      88
+    ],
+    [
+      37,
+      244,
+      639,
+      5987,
+      91
+    ],
+    [
+      539,
+      1375,
+      81,
+      96,
+      4908
+    ]
+  ]
+}

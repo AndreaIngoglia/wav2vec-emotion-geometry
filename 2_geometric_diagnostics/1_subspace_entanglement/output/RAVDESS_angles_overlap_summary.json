@@ -1,0 +1,150 @@
+{
+  "probe_dir": "xai_weights/RAVDESS",
+  "embedding_dim": 2048,
+  "center_multiclass_spans": true,
+  "emotion_classes": [
+    "angry",
+    "calm",
+    "disgust",
+    "fearful",
+    "happy",
+    "neutral",
+    "sad",
+    "surprised"
+  ],
+  "top_k": 8,
+  "rowwise": {
+    "emotion_vs_gender": [
+      {
+        "emotion": "neutral",
+        "cosine": -0.11402557091156595,
+        "angle_deg": 96.54742467346036
+      },
+      {
+        "emotion": "fearful",
+        "cosine": 0.0838591107294962,
+        "angle_deg": 85.18957751066056
+      },
+      {
+        "emotion": "angry",
+        "cosine": -0.08162001603727143,
+        "angle_deg": 94.68169038989538
+      },
+      {
+        "emotion": "sad",
+        "cosine": 0.050151330113559864,
+        "angle_deg": 87.12533454903595
+      },
+      {
+        "emotion": "surprised",
+        "cosine": 0.038933282130876504,
+        "angle_deg": 87.76872331398903
+      },
+      {
+        "emotion": "happy",
+        "cosine": 0.03548455179270058,
+        "angle_deg": 87.96645803513117
+      },
+      {
+        "emotion": "calm",
+        "cosine": -0.030103091654525828,
+        "angle_deg": 91.72504070656004
+      },
+      {
+        "emotion": "disgust",
+        "cosine": 0.027133165864357687,
+        "angle_deg": 88.44519329429953
+      }
+    ],
+    "all_emotion_vs_gender": [
+      {
+        "emotion": "angry",
+        "cosine": -0.08162001603727143,
+        "angle_deg": 94.68169038989538
+      },
+      {
+        "emotion": "calm",
+        "cosine": -0.030103091654525828,
+        "angle_deg": 91.72504070656004
+      },
+      {
+        "emotion": "disgust",
+        "cosine": 0.027133165864357687,
+        "angle_deg": 88.44519329429953
+      },
+      {
+        "emotion": "fearful",
+        "cosine": 0.0838591107294962,
+        "angle_deg": 85.18957751066056
+      },
+      {
+        "emotion": "happy",
+        "cosine": 0.03548455179270058,
+        "angle_deg": 87.96645803513117
+      },
+      {
+        "emotion": "neutral",
+        "cosine": -0.11402557091156595,
+        "angle_deg": 96.54742467346036
+      },
+      {
+        "emotion": "sad",
+        "cosine": 0.050151330113559864,
+        "angle_deg": 87.12533454903595
+      },
+      {
+        "emotion": "surprised",
+        "cosine": 0.038933282130876504,
+        "angle_deg": 87.76872331398903
+      }
+    ]
+  },
+  "subspace": {
+    "principal_angles_emotion_vs_gender_deg": [
+      79.824778042466
+    ],
+    "principal_angles_emotion_vs_actor_deg": [
+      67.92860622336396,
+      69.7276790743121,
+      74.20037759687096,
+      75.8596909513553,
+      77.20720486741486,
+      77.49367518393105,
+      80.81988716823854
+    ],
+    "smallest_angles_emotion_vs_actor_deg": [
+      67.92860622336396,
+      69.7276790743121,
+      74.20037759687096,
+      75.8596909513553,
+      77.20720486741486
+    ],
+    "principal_angles_gender_vs_actor_deg": [
+      29.796011318496173
+    ],
+    "overlap_emotion_vs_gender": {
+      "rank_A": 7,
+      "rank_B": 1,
+      "k": 1,
+      "smallest_angle_deg": 79.824778042466,
+      "mean_cos2": 0.031208437645618356,
+      "affinity": 0.06677086366888133
+    },
+    "overlap_emotion_vs_actor": {
+      "rank_A": 7,
+      "rank_B": 23,
+      "k": 7,
+      "smallest_angle_deg": 67.92860622336396,
+      "mean_cos2": 0.07377655938578563,
+      "affinity": 0.05663635312265575
+    },
+    "overlap_gender_vs_actor": {
+      "rank_A": 1,
+      "rank_B": 23,
+      "k": 1,
+      "smallest_angle_deg": 29.796011318496173,
+      "mean_cos2": 0.7530769240361791,
+      "affinity": 0.18094881861480816
+    }
+  }
+}

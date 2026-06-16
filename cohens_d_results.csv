@@ -1,0 +1,2 @@
+speaker,emotion_a,emotion_b,feature,cohens_d,abs_d,mean_a,mean_b
+4,Happy,Surprise,equivalentSoundLevel_dBp,-4.476102331845498,4.476102331845498,-0.9125703221789134,0.9125703221789143

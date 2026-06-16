@@ -1,0 +1,196 @@
+{
+  "dataset": "ESD_chinese",
+  "nuisance_names": [
+    "speaker",
+    "gender"
+  ],
+  "individual_ranks": {
+    "speaker": 20,
+    "gender": 1
+  },
+  "joint_rank": 21,
+  "baseline": {
+    "acc_mean": 0.7730857142857144,
+    "acc_std": 0.06490555776334894,
+    "f1_macro_mean": 0.7683310768687275,
+    "f1_macro_std": 0.07252662301069387,
+    "precision_macro_mean": 0.8046597782150273,
+    "recall_macro_mean": 0.7730857142857144,
+    "acc_cv_pred": 0.7730857142857143,
+    "precision_macro_cv_pred": 0.7717118657330572,
+    "recall_macro_cv_pred": 0.7730857142857144,
+    "f1_macro_cv_pred": 0.7719279215190908,
+    "n_classes": 5,
+    "classes": [
+      "Angry",
+      "Happy",
+      "Neutral",
+      "Sad",
+      "Surprise"
+    ]
+  },
+  "individual_ablations": {
+    "speaker": {
+      "acc_mean": 0.7723428571428571,
+      "acc_std": 0.0667937183897298,
+      "f1_macro_mean": 0.7681021044089379,
+      "f1_macro_std": 0.0742531363177783,
+      "precision_macro_mean": 0.799701543682213,
+      "recall_macro_mean": 0.7723428571428571,
+      "acc_cv_pred": 0.7723428571428571,
+      "precision_macro_cv_pred": 0.7705146920479691,
+      "recall_macro_cv_pred": 0.7723428571428572,
+      "f1_macro_cv_pred": 0.7710793419039407,
+      "n_classes": 5,
+      "classes": [
+        "Angry",
+        "Happy",
+        "Neutral",
+        "Sad",
+        "Surprise"
+      ]
+    },
+    "gender": {
+      "acc_mean": 0.7722857142857142,
+      "acc_std": 0.06629962908136462,
+      "f1_macro_mean": 0.7673801204526571,
+      "f1_macro_std": 0.07416974541902578,
+      "precision_macro_mean": 0.8048470138652609,
+      "recall_macro_mean": 0.7722857142857142,
+      "acc_cv_pred": 0.7722857142857142,
+      "precision_macro_cv_pred": 0.7709435848557881,
+      "recall_macro_cv_pred": 0.7722857142857145,
+      "f1_macro_cv_pred": 0.7711495875296158,
+      "n_classes": 5,
+      "classes": [
+        "Angry",
+        "Happy",
+        "Neutral",
+        "Sad",
+        "Surprise"
+      ]
+    }
+  },
+  "joint_ablation": {
+    "acc_mean": 0.7715428571428571,
+    "acc_std": 0.06769333009075201,
+    "f1_macro_mean": 0.7671953313106468,
+    "f1_macro_std": 0.07509148819717391,
+    "precision_macro_mean": 0.7986301882727773,
+    "recall_macro_mean": 0.7715428571428571,
+    "acc_cv_pred": 0.7715428571428572,
+    "precision_macro_cv_pred": 0.7698217805074952,
+    "recall_macro_cv_pred": 0.7715428571428571,
+    "f1_macro_cv_pred": 0.7703378522909405,
+    "n_classes": 5,
+    "classes": [
+      "Angry",
+      "Happy",
+      "Neutral",
+      "Sad",
+      "Surprise"
+    ]
+  },
+  "neighborhood_baseline": {
+    "emotion": {
+      "mean_pct": 66.35314285714286,
+      "std_pct": 29.517701785435086
+    },
+    "speaker": {
+      "mean_pct": 37.833904761904755,
+      "std_pct": 25.444894077085568
+    },
+    "gender": {
+      "mean_pct": 71.23961904761904,
+      "std_pct": 22.5012418390479
+    }
+  },
+  "neighborhood_joint_ablated": {
+    "emotion": {
+      "mean_pct": 65.96304761904761,
+      "std_pct": 29.683368753449933
+    },
+    "speaker": {
+      "mean_pct": 35.15009523809523,
+      "std_pct": 24.674098204658907
+    },
+    "gender": {
+      "mean_pct": 68.90285714285714,
+      "std_pct": 22.99675804816026
+    }
+  },
+  "confusion_matrix_baseline": [
+    [
+      2888,
+      303,
+      39,
+      2,
+      268
+    ],
+    [
+      395,
+      2064,
+      244,
+      18,
+      779
+    ],
+    [
+      77,
+      165,
+      3157,
+      35,
+      66
+    ],
+    [
+      4,
+      21,
+      153,
+      3260,
+      62
+    ],
+    [
+      372,
+      842,
+      88,
+      38,
+      2160
+    ]
+  ],
+  "confusion_matrix_joint": [
+    [
+      2823,
+      306,
+      40,
+      2,
+      329
+    ],
+    [
+      362,
+      2069,
+      290,
+      24,
+      755
+    ],
+    [
+      67,
+      157,
+      3162,
+      45,
+      69
+    ],
+    [
+      7,
+      20,
+      162,
+      3259,
+      52
+    ],
+    [
+      336,
+      828,
+      90,
+      57,
+      2189
+    ]
+  ]
+}

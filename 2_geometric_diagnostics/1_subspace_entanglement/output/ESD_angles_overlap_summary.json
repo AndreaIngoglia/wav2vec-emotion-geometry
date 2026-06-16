@@ -1,0 +1,113 @@
+{
+  "probe_dir": "xai_weights/ESD",
+  "embedding_dim": 2048,
+  "center_multiclass_spans": true,
+  "emotion_classes": [
+    "angry",
+    "happy",
+    "neutral",
+    "sad",
+    "surprise"
+  ],
+  "top_k": 5,
+  "rowwise": {
+    "emotion_vs_language": [
+      {
+        "emotion": "sad",
+        "cosine": 0.08628808270047084,
+        "angle_deg": 85.04990126046155
+      },
+      {
+        "emotion": "angry",
+        "cosine": -0.028571759712404436,
+        "angle_deg": 91.63726405850703
+      },
+      {
+        "emotion": "surprise",
+        "cosine": -0.017279664723836036,
+        "angle_deg": 90.99010113610304
+      },
+      {
+        "emotion": "neutral",
+        "cosine": -0.017276870284471158,
+        "angle_deg": 90.98994100261653
+      },
+      {
+        "emotion": "happy",
+        "cosine": -0.013537985010723575,
+        "angle_deg": 90.77569309991202
+      }
+    ],
+    "emotion_vs_gender": [
+      {
+        "emotion": "angry",
+        "cosine": -0.15535897319650982,
+        "angle_deg": 98.93761610786262
+      },
+      {
+        "emotion": "neutral",
+        "cosine": -0.15046191760057645,
+        "angle_deg": 98.65369629962791
+      },
+      {
+        "emotion": "surprise",
+        "cosine": 0.13973663625778504,
+        "angle_deg": 81.9673931855372
+      },
+      {
+        "emotion": "happy",
+        "cosine": 0.11165492560278903,
+        "angle_deg": 83.58927642123184
+      },
+      {
+        "emotion": "sad",
+        "cosine": 0.06956394232791027,
+        "angle_deg": 86.01105810017984
+      }
+    ]
+  },
+  "subspace": {
+    "principal_angles_emotion_vs_language_deg": [
+      85.02936722788796
+    ],
+    "principal_angles_emotion_vs_gender_deg": [
+      75.99189417423716
+    ],
+    "principal_angles_emotion_vs_speaker_deg": [
+      75.10173176137846,
+      76.33090636299528,
+      80.2795934010152,
+      84.66428916234811
+    ],
+    "smallest_angles_emotion_vs_speaker_deg": [
+      75.10173176137846,
+      76.33090636299528,
+      80.2795934010152,
+      84.66428916234811
+    ],
+    "overlap_emotion_vs_language": {
+      "rank_A": 4,
+      "rank_B": 1,
+      "k": 1,
+      "smallest_angle_deg": 85.02936722788796,
+      "mean_cos2": 0.007507378020467701,
+      "affinity": 0.04332256346428412
+    },
+    "overlap_emotion_vs_gender": {
+      "rank_A": 4,
+      "rank_B": 1,
+      "k": 1,
+      "smallest_angle_deg": 75.99189417423716,
+      "mean_cos2": 0.05859263895543929,
+      "affinity": 0.121029582081654
+    },
+    "overlap_emotion_vs_speaker": {
+      "rank_A": 4,
+      "rank_B": 19,
+      "k": 4,
+      "smallest_angle_deg": 75.10173176137846,
+      "mean_cos2": 0.03977525795339662,
+      "affinity": 0.04575406680423214
+    }
+  }
+}

@@ -1,0 +1,8 @@
+flowchart TD
+  A["Raw audio waveform (16000 Hz)"] --> B["Feature Encoder (Conv stack)"]
+  B --> Bm["Conv layers: 7"]
+  B --> C["Transformer Encoder (Wav2Vec2)"]
+  C --> Cm["Layers=24 | Hidden=1024 | Heads=16"]
+  Cm --> D[Frame-level representations]
+  D --> E["Temporal pooling: mean"]
+  E --> F["Classification head → logits (8 classes)"]

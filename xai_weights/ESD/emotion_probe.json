@@ -1,0 +1,56 @@
+{
+  "class_name": "emotion",
+  "n_samples": 34994,
+  "n_dims": 2048,
+  "n_classes": 5,
+  "cv_type": "GroupKFold",
+  "group_cv": true,
+  "acc_mean": 0.7764427835473057,
+  "acc_std": 0.04739195742690261,
+  "acc_cv_pred": 0.7764473909813111,
+  "precision_macro": 0.7749965217466391,
+  "recall_macro": 0.776449445550448,
+  "f1_macro": 0.7754849713607961,
+  "confusion_matrix": [
+    [
+      5918,
+      493,
+      112,
+      11,
+      464
+    ],
+    [
+      638,
+      4315,
+      465,
+      293,
+      1288
+    ],
+    [
+      128,
+      339,
+      6064,
+      363,
+      106
+    ],
+    [
+      24,
+      216,
+      585,
+      6081,
+      92
+    ],
+    [
+      572,
+      1459,
+      86,
+      89,
+      4793
+    ]
+  ],
+  "classification_report": "              precision    recall  f1-score   support\n\n       angry     0.8129    0.8457    0.8290      6998\n       happy     0.6325    0.6165    0.6244      6999\n     neutral     0.8293    0.8663    0.8474      7000\n         sad     0.8894    0.8690    0.8791      6998\n    surprise     0.7108    0.6848    0.6976      6999\n\n    accuracy                         0.7764     34994\n   macro avg     0.7750    0.7764    0.7755     34994\nweighted avg     0.7750    0.7764    0.7755     34994\n",
+  "C": 1.0,
+  "max_iter": 5000,
+  "seed": 42,
+  "cv_folds_requested": 10
+}

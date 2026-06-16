@@ -1,0 +1,29 @@
+{
+  "class_name": "gender",
+  "n_samples": 34994,
+  "n_dims": 2048,
+  "n_classes": 2,
+  "cv_type": "GroupKFold",
+  "group_cv": true,
+  "acc_mean": 0.881303001063047,
+  "acc_std": 0.08618802834582642,
+  "acc_cv_pred": 0.881293936103332,
+  "precision_macro": 0.8804103923820469,
+  "recall_macro": 0.879558174295217,
+  "f1_macro": 0.8799592030129624,
+  "confusion_matrix": [
+    [
+      13575,
+      2169
+    ],
+    [
+      1985,
+      17265
+    ]
+  ],
+  "classification_report": "              precision    recall  f1-score   support\n\n      female     0.8724    0.8622    0.8673     15744\n        male     0.8884    0.8969    0.8926     19250\n\n    accuracy                         0.8813     34994\n   macro avg     0.8804    0.8796    0.8800     34994\nweighted avg     0.8812    0.8813    0.8812     34994\n",
+  "C": 1.0,
+  "max_iter": 5000,
+  "seed": 42,
+  "cv_folds_requested": 10
+}

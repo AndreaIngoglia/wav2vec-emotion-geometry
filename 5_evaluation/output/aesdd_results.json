@@ -1,0 +1,80 @@
+{
+  "dataset": "AESDD",
+  "language": "Greek",
+  "shared_emotions": [
+    "angry",
+    "happy",
+    "sad"
+  ],
+  "n_samples": 363,
+  "base_model": {
+    "name": "RAVDESS base (HuggingFace, no retraining)",
+    "model_id": "ehcalabres/wav2vec2-lg-xlsr-en-speech-emotion-recognition",
+    "model": "Base RAVDESS model",
+    "accuracy": 0.6115702479338843,
+    "precision_macro": 0.5249872120970059,
+    "recall_macro": 0.6063756685903549,
+    "f1_macro": 0.4948649604906239,
+    "per_class_accuracy": {
+      "angry": 0.8071625344352618,
+      "happy": 0.6694214876033058,
+      "sad": 0.7493112947658402
+    },
+    "per_class_precision": {
+      "angry": 0.6624203821656051,
+      "happy": 0.3333333333333333,
+      "sad": 0.5792079207920792
+    },
+    "per_class_recall": {
+      "angry": 0.859504132231405,
+      "happy": 0.008403361344537815,
+      "sad": 0.9512195121951219
+    },
+    "per_class_f1": {
+      "angry": 0.7482014388489209,
+      "happy": 0.01639344262295082,
+      "sad": 0.72
+    },
+    "prediction_distribution": {
+      "angry": 157,
+      "sad": 202,
+      "happy": 3,
+      "error": 1
+    }
+  },
+  "retrained_model": {
+    "name": "Retrained head (ESD eng+chi combined)",
+    "saved_model_dir": "/content/drive/MyDrive/saved_models/all",
+    "model": "Retrained model (ESD eng+chi)",
+    "accuracy": 0.7493112947658402,
+    "precision_macro": 0.8320870014672535,
+    "recall_macro": 0.7501981374421702,
+    "f1_macro": 0.74998426998427,
+    "per_class_accuracy": {
+      "angry": 0.8319559228650137,
+      "happy": 0.7548209366391184,
+      "sad": 0.9146005509641874
+    },
+    "per_class_precision": {
+      "angry": 0.96875,
+      "happy": 0.576530612244898,
+      "sad": 0.9509803921568627
+    },
+    "per_class_recall": {
+      "angry": 0.512396694214876,
+      "happy": 0.9495798319327731,
+      "sad": 0.7886178861788617
+    },
+    "per_class_f1": {
+      "angry": 0.6702702702702703,
+      "happy": 0.7174603174603175,
+      "sad": 0.8622222222222222
+    },
+    "prediction_distribution": {
+      "happy": 196,
+      "angry": 64,
+      "sad": 102,
+      "error": 1
+    }
+  }
+}

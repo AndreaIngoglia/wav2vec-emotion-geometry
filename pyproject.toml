@@ -1,0 +1,18 @@
+# Optional: makes the shared `common` package importable from anywhere via
+#   pip install -e .
+# This is NOT required — every script already adds the repo root to sys.path on
+# its own — but it gives a cleaner `import common` if you prefer.
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ser-thesis"
+version = "1.0.0"
+description = "Speech Emotion Recognition probing & geometric-diagnostic pipeline (MSc thesis, Andrea Ingoglia)"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+packages = ["common"]

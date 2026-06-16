@@ -1,0 +1,29 @@
+{
+  "class_name": "language",
+  "n_samples": 34994,
+  "n_dims": 2048,
+  "n_classes": 2,
+  "cv_type": "GroupKFold",
+  "group_cv": true,
+  "acc_mean": 0.9983990187259792,
+  "acc_std": 0.0015633302647892963,
+  "acc_cv_pred": 0.9983997256672572,
+  "precision_macro": 0.9984000184696924,
+  "recall_macro": 0.998399666824544,
+  "f1_macro": 0.9983997252438557,
+  "confusion_matrix": [
+    [
+      17478,
+      22
+    ],
+    [
+      34,
+      17460
+    ]
+  ],
+  "classification_report": "              precision    recall  f1-score   support\n\n     chinese     0.9981    0.9987    0.9984     17500\n     english     0.9987    0.9981    0.9984     17494\n\n    accuracy                         0.9984     34994\n   macro avg     0.9984    0.9984    0.9984     34994\nweighted avg     0.9984    0.9984    0.9984     34994\n",
+  "C": 1.0,
+  "max_iter": 5000,
+  "seed": 42,
+  "cv_folds_requested": 10
+}
